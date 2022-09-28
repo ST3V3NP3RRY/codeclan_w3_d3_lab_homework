@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/main.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>PC Planet</h1>
+    </header>
+    <main>
+      <h2>Computer Orders</h2>
+      <div class="order_details">
+        <p>Name: <span class="bolder">{{ order.customer_name }}</span></p>
+        <hr />
+        <p>Date: <span class="bolder">{{ order.order_date }}</span></p>
+        <hr />
+        <p>Quantity: <span class="bolder">{{ order.quantity }}</span></p>
+        <hr />
+        <p>Order ID: <span class="bolder">{{ order.order_number }}</span></p>
+      </div>
+      <a href="/" class="back_btn">Home</a>
+    </main>
+  </body>
+</html>

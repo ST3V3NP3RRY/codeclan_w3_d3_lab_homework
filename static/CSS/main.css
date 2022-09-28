@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  background-color: #eee;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+}
+
+header {
+  height: 25vh;
+  background-image: url(/static/images/planet.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 8rem;
+  color: #fff;
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 4rem;
+  border-bottom: 2px solid skyblue;
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description {
+  margin: 2rem 0;
+}
+
+.order_details {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  letter-spacing: 0.25rem;
+  margin-top: 3rem;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.customer_name {
+  text-decoration: none;
+  line-height: 2rem;
+  color: rgb(75, 90, 224);
+}
+
+.customer_name:visited {
+  color: skyblue;
+}
+
+.customer_name:hover {
+  color: #030345;
+}
+
+.back_btn {
+  background-color: skyblue;
+  padding: 1rem;
+  color: white;
+  margin-top: 4rem;
+  text-decoration: none;
+}
